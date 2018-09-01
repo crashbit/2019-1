@@ -12,6 +12,8 @@
 		C1DE7DC3213AFFFF007CF43C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DE7DC1213AFFFF007CF43C /* Main.storyboard */; };
 		C1DE7DC5213B0000007CF43C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DE7DC4213B0000007CF43C /* Assets.xcassets */; };
 		C1DE7DC8213B0000007CF43C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DE7DC6213B0000007CF43C /* LaunchScreen.storyboard */; };
+		C1DE7DD0213B00E5007CF43C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE7DCF213B00E5007CF43C /* Model.swift */; };
+		C1DE7DD2213B10D5007CF43C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE7DD1213B10D5007CF43C /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C1DE7DC4213B0000007CF43C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1DE7DC7213B0000007CF43C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1DE7DC9213B0000007CF43C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DE7DCF213B00E5007CF43C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C1DE7DD1213B10D5007CF43C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C1DE7DC4213B0000007CF43C /* Assets.xcassets */,
 				C1DE7DC6213B0000007CF43C /* LaunchScreen.storyboard */,
 				C1DE7DC9213B0000007CF43C /* Info.plist */,
+				C1DE7DCF213B00E5007CF43C /* Model.swift */,
+				C1DE7DD1213B10D5007CF43C /* SecondViewController.swift */,
 			);
 			path = iTunesTable;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DE7DD2213B10D5007CF43C /* SecondViewController.swift in Sources */,
+				C1DE7DD0213B00E5007CF43C /* Model.swift in Sources */,
 				C1DE7DC0213AFFFF007CF43C /* ViewController.swift in Sources */,
 				C1DE7DBE213AFFFF007CF43C /* AppDelegate.swift in Sources */,
 			);

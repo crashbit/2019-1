@@ -1,0 +1,6 @@
+framework module Pods_TracksItunes {
+  umbrella header "Pods-TracksItunes-umbrella.h"
+
+  export *
+  module * { export * }
+}
