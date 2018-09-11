@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tablita: UITableView!
     var alumnos = ["Ariana", "Luis", "Fer", "Carlos", "Magui"]
     
     override func viewDidLoad() {
@@ -40,11 +41,47 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell?.accessoryType = .checkmark
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceview, completionHandler) in
+            
+            self.alumnos.remove(at: indexPath.row)
+            self.tablita.deleteRows(at: [indexPath], with: .fade )
+            completionHandler(true)
+            
+        }
+        
+        let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceview, completionHandler) in
+            
+            let defaultTex = "Compartiendo a: \(self.alumnos[indexPath.row])"
+            
+            let activityController = UIActivityViewController(activityItems: [defaultTex], applicationActivities: nil)
+            
+            self.present(activityController, animated: true, completion: nil)
+            
+            completionHandler(true)
+        }
+        
+        shareAction.backgroundColor = UIColor.green
+        
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
+        
+        
+        return swipeConfiguration
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segunda"{
+            
+            let indexPath = tablita.indexPathForSelectedRow
+            
             let destino = segue.destination as! SecondViewController
-            destino.vieneDeVistaUno = "cualquiercosa"
+            destino.vieneDeVistaUno = alumnos[(indexPath?.row)!]
         }
+    }
+    
+    @IBAction func unwindSecondView( segue: UIStoryboardSegue){
+        
     }
     
 }
