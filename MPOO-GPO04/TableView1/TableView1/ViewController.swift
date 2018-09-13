@@ -22,15 +22,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath) as! CeldaTableViewCell
         
-        if indexPath.row % 2 == 0{
-            cell.backgroundColor = UIColor.red
-        }else{
-            cell.backgroundColor = UIColor.white
-        }
+//        if indexPath.row % 2 == 0{
+//            cell.backgroundColor = UIColor.red
+//        }else{
+//            cell.backgroundColor = UIColor.white
+//        }
         
-        cell.textLabel?.text = alumnos[indexPath.row]
+        //cell.textLabel?.text = alumnos[indexPath.row]
+        
+        cell.titulo.text = alumnos[indexPath.row]
+        
         return cell
     }
     
@@ -47,7 +50,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.alumnos.remove(at: indexPath.row)
             self.tablita.deleteRows(at: [indexPath], with: .fade )
             completionHandler(true)
-            
         }
         
         let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceview, completionHandler) in
