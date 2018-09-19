@@ -8,18 +8,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource {
+    var Productos = [Producto]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        Productos.append(Producto(nombre: "cosa1", precio: 13.2, desc: "cosa chida", imagen: "alguna imagen"))
+        
+        Productos.append(Producto(nombre: "cosa2", precio: 14.2, desc: "cosa fea", imagen: "otra imagen"))
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Productos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "item", for: indexPath)
+        
+        cell.textLabel?.text = "\(Productos[indexPath.row].nombre) - \(Productos[indexPath.row].precio)"
+        return cell
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
 
 }
 

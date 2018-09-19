@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Producto{
+    var nombre: String
+    var precio: Double
+    var desc: String
+    var imagen: String
+}
