@@ -81,6 +81,9 @@
                                 <rect key="frame" x="165" y="45" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cerrar"/>
+                                <connections>
+                                    <segue destination="Jk6-QS-h5R" kind="unwind" unwindAction="unwindSecondViewWithSegue:" id="cKn-m5-psB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +94,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3m-M7-dI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Jk6-QS-h5R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="997.60000000000002" y="137.18140929535232"/>
         </scene>
