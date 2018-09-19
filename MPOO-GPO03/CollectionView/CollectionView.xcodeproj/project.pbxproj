@@ -12,6 +12,7 @@
 		C14575D22152F80600AAAF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14575D02152F80600AAAF06 /* Main.storyboard */; };
 		C14575D42152F80700AAAF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14575D32152F80700AAAF06 /* Assets.xcassets */; };
 		C14575D72152F80700AAAF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14575D52152F80700AAAF06 /* LaunchScreen.storyboard */; };
+		C14575DF2152FB7500AAAF06 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14575DE2152FB7500AAAF06 /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C14575D32152F80700AAAF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C14575D62152F80700AAAF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14575D82152F80700AAAF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14575DE2152FB7500AAAF06 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C14575D32152F80700AAAF06 /* Assets.xcassets */,
 				C14575D52152F80700AAAF06 /* LaunchScreen.storyboard */,
 				C14575D82152F80700AAAF06 /* Info.plist */,
+				C14575DE2152FB7500AAAF06 /* ItemCollectionViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14575DF2152FB7500AAAF06 /* ItemCollectionViewCell.swift in Sources */,
 				C14575CF2152F80600AAAF06 /* ViewController.swift in Sources */,
 				C14575CD2152F80600AAAF06 /* AppDelegate.swift in Sources */,
 			);
