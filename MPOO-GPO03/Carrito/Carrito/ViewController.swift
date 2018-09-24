@@ -30,6 +30,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = "\(Productos[indexPath.row].nombre) - \(Productos[indexPath.row].precio)"
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destination = segue.destination as! DetalleViewController
+        destination.producto = productos[indexPath.row]
+        
+    }
 
    
 
