@@ -33,8 +33,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Alumno despistado, aqui debe crear tu indexPath
+        // let indexPath = nombreTabla.....
         let destination = segue.destination as! DetalleViewController
-        destination.producto = productos[indexPath.row]
+        //destination.producto = productos[indexPath.row]
         
     }
 
