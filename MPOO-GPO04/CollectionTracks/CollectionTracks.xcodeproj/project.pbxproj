@@ -12,6 +12,8 @@
 		C168AE3F215ADA8B00A0F422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168AE3D215ADA8B00A0F422 /* Main.storyboard */; };
 		C168AE41215ADA8C00A0F422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C168AE40215ADA8C00A0F422 /* Assets.xcassets */; };
 		C168AE44215ADA8C00A0F422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168AE42215ADA8C00A0F422 /* LaunchScreen.storyboard */; };
+		C168AE4C215ADE5400A0F422 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168AE4B215ADE5400A0F422 /* Model.swift */; };
+		C168AE4E215AE0BD00A0F422 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168AE4D215AE0BD00A0F422 /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C168AE40215ADA8C00A0F422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C168AE43215ADA8C00A0F422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C168AE45215ADA8C00A0F422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C168AE4B215ADE5400A0F422 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C168AE4D215AE0BD00A0F422 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C168AE40215ADA8C00A0F422 /* Assets.xcassets */,
 				C168AE42215ADA8C00A0F422 /* LaunchScreen.storyboard */,
 				C168AE45215ADA8C00A0F422 /* Info.plist */,
+				C168AE4B215ADE5400A0F422 /* Model.swift */,
+				C168AE4D215AE0BD00A0F422 /* ItemCollectionViewCell.swift */,
 			);
 			path = CollectionTracks;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C168AE4C215ADE5400A0F422 /* Model.swift in Sources */,
+				C168AE4E215AE0BD00A0F422 /* ItemCollectionViewCell.swift in Sources */,
 				C168AE3C215ADA8B00A0F422 /* ViewController.swift in Sources */,
 				C168AE3A215ADA8B00A0F422 /* AppDelegate.swift in Sources */,
 			);

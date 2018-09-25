@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct Resultados : Codable{
+    var resultCount: Int
+    var results: [Track]
+}
+
+struct Track: Codable{
+    var trackName: String
+    var trackPrice: Double
+}

@@ -10,4 +10,6 @@ import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var titulo: UILabel!
+    @IBOutlet weak var precio: UILabel!
 }
