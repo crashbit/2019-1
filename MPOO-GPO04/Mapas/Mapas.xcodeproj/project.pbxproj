@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1AC1D35216D5702002509A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AC1D34216D5702002509A6 /* MapKit.framework */; };
 		C1B9168F216D45F300D51DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B9168E216D45F300D51DE8 /* AppDelegate.swift */; };
 		C1B91691216D45F300D51DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B91690216D45F300D51DE8 /* ViewController.swift */; };
 		C1B91694216D45F300D51DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B91692216D45F300D51DE8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1AC1D34216D5702002509A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C1B9168B216D45F300D51DE8 /* Mapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B9168E216D45F300D51DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B91690216D45F300D51DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AC1D35216D5702002509A6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1AC1D33216D5702002509A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1AC1D34216D5702002509A6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1B91682216D45F300D51DE8 = {
 			isa = PBXGroup;
 			children = (
 				C1B9168D216D45F300D51DE8 /* Mapas */,
 				C1B9168C216D45F300D51DE8 /* Products */,
+				C1AC1D33216D5702002509A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,11 @@
 				TargetAttributes = {
 					C1B9168A216D45F300D51DE8 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -285,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CTB5R79WAE;
 				INFOPLIST_FILE = Mapas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CTB5R79WAE;
 				INFOPLIST_FILE = Mapas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
